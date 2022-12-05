@@ -10,3 +10,15 @@ fwrite($arquivo, "renata");
 fclose($arquivo); 
 ```
 
+
+### Lendo um arquivo
+- 'fopen' : o modo de abertura é o "r" que indica leitura do arquivo. Exemplo: 'fopen("clientes.txt", "r");
+- 'fread': indicar o arquivo que sera lido e o tamanho das informações que seram lidas, nesse caso, como normalmente queremos o arquivo inteiro utilizamos o comando 'filesize' que retorna o tamanho de um arquivo.
+Exemplo: `fread($arquivo, filesize("clientes.txt"));
+
+```php
+$arquivo = fopen(clientes.txt,"r");
+echo fread($arquivo,filesize(clientes.txt));
+fclose($arquivo);
+``` 
+

@@ -13,8 +13,6 @@ $listaClientes = [
     ],
     
 ];
-
-
 for($i=0; $i<count($listaClientes); $i++){
     fwrite($arquivo, $listaClientes[$i]["nome"] . "\t");
     fwrite($arquivo, $listaClientes[$i]["idade"] . "\n");
@@ -23,4 +21,3 @@ for($i=0; $i<count($listaClientes); $i++){
 fclose($arquivo);
 ?>
 
-<a href="clientes.txt" downloand>Lista de clientes</a> 
